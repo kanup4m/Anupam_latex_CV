@@ -1,0 +1,160 @@
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+\ifxetexorluatex
+  \setmainfont{Carlito}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+\addbibresource{sample.bib}
+\newcommand{\ts}{\textsuperscript}
+
+\begin{document}
+\name{ANUPAM KUSHWAHA}
+\tagline{JSS Academy of Technical Education}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%\photo{3.3cm}{profile.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{kanupam500@gmail.com}
+%   \phone{000-00-0000}
+%  \mailaddress{Address, Street, 00000 County}
+  \location{Bahraich, Uttar Pradesh - India}
+%  \homepage{marissamayr.tumblr.com/}
+%  \twitter{@marissamayer}
+  \github{https://github.com/kanup4m}
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{Frontend Developer}{Hossip.com}{July 2019 -- Oct 2019}{Banglore, India}
+\begin{itemize}
+\item Working with team on design,development and deployment of the platform.
+\smallskip
+\item Worked a liitle bit on the design.
+\smallskip
+\item Experience with performance analysis, optimizations of the website.
+\end{itemize}
+
+\divider
+
+\cvevent{Frontend Developer}{OkCusomer.in}{Dec 2019 - Jan 2020} {WFH}
+\begin{itemize}
+\item Developed the entire platform from scratch. 
+\smallskip
+\item Worked on many tech skills and learnt a lot.
+\end{itemize}
+
+\cvsection{TECHNICAL SKILLS}
+\smallskip
+\begin{itemize}
+\item HTML/CSS, Javascript, ReactJs, React Native, NodeJs, NextJs
+\smallskip
+\item C, C++ (Prior Experience), Python (Begineer)
+\smallskip
+\end{itemize}
+
+%\divider
+\cvsection{Achievements}
+\smallskip
+\begin{itemize}
+\item Frontend developer at Nibble Computer Society.
+\smallskip
+\item Secured 8\ts{th} position in the Innovaccer Hackathon.
+\smallskip
+\item Winner of essay competition for two consecutive years in school. 
+\end{itemize}
+
+
+\cvsection{HACKATHON}
+\smallskip
+\begin{itemize}
+\item Hackathon 3.0 - Rajasthan.
+\smallskip
+\item Innovaccer Hackathon - 2018.
+\smallskip
+\item Hack In The North - IIIT Allahabad.
+\end{itemize}
+
+\cvsection{Hobbies}
+\smallskip
+\begin{itemize}
+\item Reading.
+\smallskip
+\item Playing video games.
+\smallskip
+\item Tinkering with gadgets.
+\end{itemize}
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+%\cvsection{A Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+% \wheelchart{1.5cm}{0.5cm}{%
+%   10/10em/accent!30/Sleeping \& dreaming about work,
+%   25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+%   5/13em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
+%   20/15em/accent!40/Spending time with family,
+%   5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
+%   30/9em/accent/Showing Yahoo!\ employees that their work has meaning,
+%   5/8em/accent!20/Baking cupcakes
+% }
+
+\clearpage
+
+% \cvsection[page2sidebar]{Publications}
+
+\nocite{*}
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+% %% If the NEXT page doesn't start with a \cvsection but you'd
+% %% still like to add a sidebar, then use this command on THIS
+% %% page to add it. The optional argument lets you pull up the
+% %% sidebar a bit so that it looks aligned with the top of the
+% %% main column.
+% % \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
